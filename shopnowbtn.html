@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        .x {
+            height: 55px;
+            width: 120px;
+            background: aqua;
+            color: white;
+            text-align: center;
+            margin: auto;
+            transform: translate(0, 40px);
+            line-height: 50px;
+            font-size: 20px;
+
+            font-weight: 20px;
+            outline: 5px solid aqua;
+            transition: 0.40s;
+
+
+        }
+
+        .x:hover {
+            outline: 5px solid black;
+            outline-offset: 5px;
+         
+
+        }
+        .y1{
+            height: 80px;
+            width: 80px;
+            background: black;
+            color: white;
+            z-index: 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            transform: translate(0,100px);
+            align-items: center;
+        }
+        .y1:hover{
+            color: white;
+            font-size: 20px;
+        }
+        .y2{
+            height: 80px;
+            width: 80px;
+            background: aquamarine;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scale(0);
+            transition: 0.2s;
+            z-index: -1;
+        }
+        .y1:hover .y2{
+            transform: scale(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="x">
+        Shop now
+    </div>
+    <div class="y1">
+        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+        <div class="y2"></div>
+
+
+    </div>
+
+</body>
+
+</html>
